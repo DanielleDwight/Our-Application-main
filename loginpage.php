@@ -66,9 +66,11 @@ include realpath(__DIR__ . '/app/layout/header.php');
 		.top{
 			height: 50vh;
 			width: 88vw;
-      transform: translate(10px,250px);
+      transform: translate(20px,250px);
       border-radius: 30px;
-			background-color: rgba(0,0,0,0.1);
+      color:black;
+			background: transparent;
+      border: 2px solid rgba(255,255,255,0.5);
       
 		}
 
@@ -78,29 +80,35 @@ include realpath(__DIR__ . '/app/layout/header.php');
 		}
 		
 
-		.e{
+		input[type=text]{
+      background:transparent;
 			width: 260px;
 			height: 30px;
 			position: absolute;
 			transform: translate(115px,-200px);
-			border-radius: 10px;
-      background-color:rgba(0,0,0,0.2);
+      border: 0;
+      border-bottom: 1px solid black;
 		}
 		.p{
+      background:transparent;
 			width: 260px;
 			height: 30px;
 			position: absolute;
 			transform: translate(115px,-100px);
-			border-radius: 10px;
-      background-color:rgba(0,0,0,0.2);
+      border: 0;
+      border-bottom: 1px solid black;
 		}
 
     .e::placeholder{
-      color:black
+     font-size: 20px
+    }
+    input[type=text]:focus{
+      border: 0;
+      border-bottom: 1px solid black;
     }
 
     .p::placeholder{
-      color: black
+      font-size: 20px;
     }
     
 		.inputs{
@@ -113,7 +121,10 @@ include realpath(__DIR__ . '/app/layout/header.php');
 			box-sizing: border-box;
       
 		}
-		
+
+    .inputs input{
+      color: rgba(0,0,0,0.5);
+    }
 		.check{
 			height: 50px;
 			width: 20px;
@@ -126,12 +137,12 @@ include realpath(__DIR__ . '/app/layout/header.php');
     }
 
 		.log{
-			width:100px ;
-			height:50px ;
+			width:80px ;
+			height:30px ;
 			position: absolute;
-			transform: translate(630px,-630px);
+			transform: translate(230px,-340px);
 			border-radius: 80px;
-			font-size: 25px;
+			font-size: 15px;
 		}
 
 
