@@ -14,7 +14,7 @@ include realpath(__DIR__ . '/app/layout/header.php');
 		
 		</label>
 		<br>
-		<input class="e" type="text" id="email" name="Email" placeholder="Email">
+		<input class="e" type="email" id="email" name="Email" placeholder="Email">
 
 		
 		</label>
@@ -70,8 +70,6 @@ include realpath(__DIR__ . '/app/layout/header.php');
       border-radius: 30px;
       color:black;
 			background: transparent;
-      border: 2px solid rgba(255,255,255,0.5);
-      
 		}
 
 		.text2{
@@ -79,37 +77,55 @@ include realpath(__DIR__ . '/app/layout/header.php');
 			font-size: 50px;
 		}
 		
+	input[type=email] {
+		font-size: 30px;
+		background: transparent;
+		width: 240px;
+		height: 30px;
+		position: absolute;
+    margin-bottom: 320px;
+    margin-left:220px;
+		border: 0;
+		border-bottom: 1px solid black;
+	}
 
-		input[type=text]{
-      background:transparent;
-			width: 260px;
-			height: 30px;
-			position: absolute;
-			transform: translate(115px,-200px);
-      border: 0;
-      border-bottom: 1px solid black;
-		}
-		.p{
-      background:transparent;
-			width: 260px;
-			height: 30px;
-			position: absolute;
-			transform: translate(115px,-100px);
-      border: 0;
-      border-bottom: 1px solid black;
-		}
+	input[type=password] {
+		font-size: 30px;
+		background: transparent;
+		width: 240px;
+		height: 30px;
+		position: absolute;
+    transform: translate(110px,-105px);
+		border: 0;
+		border-bottom: 1px solid black;
+	}
 
-    .e::placeholder{
-     font-size: 20px
-    }
-    input[type=text]:focus{
-      border: 0;
-      border-bottom: 1px solid black;
-    }
+  input[type=text] {
+		font-size: 30px;
+		background: transparent;
+		width: 240px;
+		height: 30px;
+		position: absolute;
+    transform: translate(110px,-105px);
+		border: 0;
+		border-bottom: 1px solid black;
+	}
 
-    .p::placeholder{
-      font-size: 20px;
-    }
+  
+	input[type=email]:focus {
+		outline: none;
+		border-bottom: 2px solid rgba(0, 0, 0, 0.64); /
+
+  }
+	input[type=password]:focus {
+		outline: none;
+		border-bottom: 2px solid rgba(0, 0, 0, 0.64); /
+	}
+
+	.e::placeholder,
+	.p::placeholder {
+		font-size: 20px;
+	}
     
 		.inputs{
 			height: 60vh;
@@ -128,7 +144,7 @@ include realpath(__DIR__ . '/app/layout/header.php');
 		.check{
 			height: 50px;
 			width: 20px;
-			transform: translate(230px,-100px);
+			transform: translate(100px,-60px);
       
       
 		}
@@ -140,7 +156,7 @@ include realpath(__DIR__ . '/app/layout/header.php');
 			width:80px ;
 			height:30px ;
 			position: absolute;
-			transform: translate(230px,-340px);
+			transform: translate(50px,-350px);
 			border-radius: 80px;
 			font-size: 15px;
 		}
